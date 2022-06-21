@@ -1,6 +1,50 @@
 const rust = import("./pkg/rust_3d");
 
-rust.then(m =>m.say_hello_from_rust())
-  .catch(console.error);
+const canvas = document.getElementById("rustCanvas");
+const gl = canvas.getContext('webgl', {antialias: true});
 
- 
+
+rust.then(m => {
+  if(!gl){
+    alert("Failed to initialize WebGL");
+    return;
+  }
+
+  // BLEND support semitransparent objects but has perfornace hit
+  gl.enable(gl.BLEND);
+  gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
+
+
+  const FPS_THROTTLE = 1000.0 / 30.0; // miliseconds / frames
+  let lastDrawTime = -1; // in miliseconds
+  const dougsClient = new m.DougsClient();
+
+
+  function render(){
+    window.requestAnimationFrame(render);
+    const currTime = Date.now();
+
+    // check if its the time to update
+    if(currTime >= lastDrawTime + FPS_THROTTLE){
+      lastDrawTime = currTime;
+
+      // also make sure when browser resizes we need to 
+      // resize the animation as well
+      if( window.innerHeight != canvas.height || window.innerWidth != canvas.width ){
+        canvas.height = window.innerHeight;
+        canvas.clientHeight = window.innerHeight;
+        canvas.style.height = window.innerHeight;
+
+        canvas.width = window.innerWidth;
+        canvas.clientWidth = window.innerWidth;
+        canvas.style.width = window.innerWidth;
+
+
+        gl.viewport(0,0, window.innerWidth, window.innerHeight);
+      }
+
+
+    }
+
+  }
+})

@@ -8,6 +8,16 @@ extern "C" {
 }
 
 #[wasm_bindgen]
-pub fn say_hello_from_rust() {
-    log("hello fro mrust");
+pub struct DougsClient {}
+
+#[wasm_bindgen]
+impl DougsClient {
+    #[wasm_bindgen(constructor)]
+    pub fn new() -> Self {
+        Self {}
+    }
+
+    pub fn update(&mut self, _item: f32, _height: f32, _width: f32) -> Result<(), JsValue> {
+        Ok(())
+    }
 }
