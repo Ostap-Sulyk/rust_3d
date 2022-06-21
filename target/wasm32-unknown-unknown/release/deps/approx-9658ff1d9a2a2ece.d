@@ -1,0 +1,11 @@
+/Users/ostapsulyk/Desktop/rust_3d/target/wasm32-unknown-unknown/release/deps/approx-9658ff1d9a2a2ece.rmeta: /Users/ostapsulyk/.cargo/registry/src/github.com-1ecc6299db9ec823/approx-0.5.1/src/lib.rs /Users/ostapsulyk/.cargo/registry/src/github.com-1ecc6299db9ec823/approx-0.5.1/src/abs_diff_eq.rs /Users/ostapsulyk/.cargo/registry/src/github.com-1ecc6299db9ec823/approx-0.5.1/src/relative_eq.rs /Users/ostapsulyk/.cargo/registry/src/github.com-1ecc6299db9ec823/approx-0.5.1/src/ulps_eq.rs /Users/ostapsulyk/.cargo/registry/src/github.com-1ecc6299db9ec823/approx-0.5.1/src/macros.rs
+
+/Users/ostapsulyk/Desktop/rust_3d/target/wasm32-unknown-unknown/release/deps/libapprox-9658ff1d9a2a2ece.rlib: /Users/ostapsulyk/.cargo/registry/src/github.com-1ecc6299db9ec823/approx-0.5.1/src/lib.rs /Users/ostapsulyk/.cargo/registry/src/github.com-1ecc6299db9ec823/approx-0.5.1/src/abs_diff_eq.rs /Users/ostapsulyk/.cargo/registry/src/github.com-1ecc6299db9ec823/approx-0.5.1/src/relative_eq.rs /Users/ostapsulyk/.cargo/registry/src/github.com-1ecc6299db9ec823/approx-0.5.1/src/ulps_eq.rs /Users/ostapsulyk/.cargo/registry/src/github.com-1ecc6299db9ec823/approx-0.5.1/src/macros.rs
+
+/Users/ostapsulyk/Desktop/rust_3d/target/wasm32-unknown-unknown/release/deps/approx-9658ff1d9a2a2ece.d: /Users/ostapsulyk/.cargo/registry/src/github.com-1ecc6299db9ec823/approx-0.5.1/src/lib.rs /Users/ostapsulyk/.cargo/registry/src/github.com-1ecc6299db9ec823/approx-0.5.1/src/abs_diff_eq.rs /Users/ostapsulyk/.cargo/registry/src/github.com-1ecc6299db9ec823/approx-0.5.1/src/relative_eq.rs /Users/ostapsulyk/.cargo/registry/src/github.com-1ecc6299db9ec823/approx-0.5.1/src/ulps_eq.rs /Users/ostapsulyk/.cargo/registry/src/github.com-1ecc6299db9ec823/approx-0.5.1/src/macros.rs
+
+/Users/ostapsulyk/.cargo/registry/src/github.com-1ecc6299db9ec823/approx-0.5.1/src/lib.rs:
+/Users/ostapsulyk/.cargo/registry/src/github.com-1ecc6299db9ec823/approx-0.5.1/src/abs_diff_eq.rs:
+/Users/ostapsulyk/.cargo/registry/src/github.com-1ecc6299db9ec823/approx-0.5.1/src/relative_eq.rs:
+/Users/ostapsulyk/.cargo/registry/src/github.com-1ecc6299db9ec823/approx-0.5.1/src/ulps_eq.rs:
+/Users/ostapsulyk/.cargo/registry/src/github.com-1ecc6299db9ec823/approx-0.5.1/src/macros.rs:

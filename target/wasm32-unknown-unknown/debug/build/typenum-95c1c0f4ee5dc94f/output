@@ -1,0 +1,2 @@
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/Users/ostapsulyk/Desktop/rust_3d/target/wasm32-unknown-unknown/debug/build/typenum-95c1c0f4ee5dc94f/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/Users/ostapsulyk/Desktop/rust_3d/target/wasm32-unknown-unknown/debug/build/typenum-95c1c0f4ee5dc94f/out/op.rs
