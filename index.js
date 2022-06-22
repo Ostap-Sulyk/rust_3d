@@ -1,8 +1,6 @@
 const rust = import("./pkg/rust_3d");
-
 const canvas = document.getElementById("rustCanvas");
-const gl = canvas.getContext('webgl', {antialias: true});
-
+const gl = canvas.getContext('webgl', { antialias: true});
 
 rust.then(m => {
   if(!gl){
@@ -10,15 +8,10 @@ rust.then(m => {
     return;
   }
 
-  // BLEND support semitransparent objects but has perfornace hit
-  gl.enable(gl.BLEND);
-  gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
-
-
   const FPS_THROTTLE = 1000.0 / 30.0; // miliseconds / frames
-  let lastDrawTime = -1; // in miliseconds
-  const dougsClient = new m.DougsClient();
-
+  const myClient = new m.MyClient();
+  const initialTime = Date.now();
+  var lastDrawTime = -1; // in miliseconds
 
   function render(){
     window.requestAnimationFrame(render);
@@ -39,12 +32,13 @@ rust.then(m => {
         canvas.clientWidth = window.innerWidth;
         canvas.style.width = window.innerWidth;
 
-
         gl.viewport(0,0, window.innerWidth, window.innerHeight);
       }
 
-
+      let elapsedTime = currTime - initialTime;
+      myClient.update(elapsedTime, window.innerHeight, window.innerWidth);
+      myClient.render();
     }
-
   }
+  render();
 })
